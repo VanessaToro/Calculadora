@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <script src="~/app/jquery/jquery-3.2.1.min.js"></script>
+    <script src="~/app/scripts/calculator.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Calculadora</h1>
+    </div>
+    <table border="1">
+        <tr>
+            <td>Primer número</td>
+            <td>
+                <input type="number" name="digito1" id="digito1" />
+            </td>
+        </tr>
+        <tr>
+            <td>Segundo número</td>
+            <td>
+                <input type="number" name="digito2" id="digito2" />
+            </td>
+        </tr>
+        <tr>
+            <td>Tercer número</td>
+            <td>
+                <input type="number" name="digito3" id="digito3"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="btnSum" id="btnSum" value="+" placeholder="Suma"/>
+                <input type="button" name="btnRest" id="btnRest" value="-" placeholder="Restar" />
+                <input type="button" name="btnMult" id="btnMult" value="*" placeholder="Multiplicar" />
+                <input type="button" name="btnDiv" id="btnDiv" value="/" placeholder="Dividir" />
+                <input type="button" name="btnRaiz" id="btnRaiz" value="Raíz" placeholder="Raíz cuadrada" />               
+            </td>
+            <td>
+            <input type="button" name="btnLimpiar" id="btnLimpiar" value="Limpiar" placeholder="Limpiar" />
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <span id="result"></span>
+</body>
+</html>
